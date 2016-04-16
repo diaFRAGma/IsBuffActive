@@ -1,0 +1,7 @@
+## Interface: 11000
+## Title: IsBuffActive 0.8
+## Author: Tyndral [root@brokengod.net]
+## Notes: Check if a particular Buff or Debuff is Active, by Name, and return the Index.
+## DefaultState: Enabled
+## LoadOnDemand: 0
+IsBuffActive.xml
