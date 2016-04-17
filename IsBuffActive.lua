@@ -10,7 +10,7 @@ function IsBuffActive(buffname, unit)
 		IsBuffActiveTooltip:ClearLines();
 		IsBuffActiveTooltip:SetInventoryItem("player",GetInventorySlotInfo("MainHandSlot"));
 		for i = 1,IsBuffActiveTooltip:NumLines() do
-			if string.find((getglobal("IsBuffActiveTooltipTextLeft"..i):GetText() or ""),buffname) and string.len(getglobal("IsBuffActiveTooltipTextLeft"..i):GetText()) == string.len(buffname) then
+			if string.find((getglobal("IsBuffActiveTooltipTextLeft"..i):GetText() or ""),buffname) then
 				return true
 			end;
 		end
@@ -20,7 +20,7 @@ function IsBuffActive(buffname, unit)
 		IsBuffActiveTooltip:ClearLines();
 		IsBuffActiveTooltip:SetInventoryItem("player",GetInventorySlotInfo("SecondaryHandSlot"));
 		for i=1,IsBuffActiveTooltip:NumLines() do
-			if string.find((getglobal("IsBuffActiveTooltipTextLeft"..i):GetText() or ""),buffname) and string.len(getglobal("IsBuffActiveTooltipTextLeft"..i):GetText()) == string.len(buffname) then
+			if string.find((getglobal("IsBuffActiveTooltipTextLeft"..i):GetText() or ""),buffname) then
 				return true
 			end;
 		end
